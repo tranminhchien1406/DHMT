@@ -1,4 +1,4 @@
-// Lab_8.cpp : Defines the entry 2 triangle for the console application.
+﻿// Lab_8.cpp : Defines the entry 2 triangle for the console application.
 //
 
 #include "Dependencies\glew\glew.h"
@@ -20,6 +20,7 @@ void display()
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 	glBegin(GL_TRIANGLES);
+	//glBegin(GL_TRIANGLES_STRIP);		//nối tất cả các đỉnh trống
 		glVertex2i(50,50);				//v0
 		glVertex2i(255, 50);			//v2
 		glVertex2i(100, 150);			//v1
